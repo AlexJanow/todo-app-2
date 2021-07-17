@@ -69,13 +69,22 @@ function App() {
   return (
     <div className="App">
       <div className="headerForm">
+        <h1>
+          todo or{" "}
+          <s className="notnot">
+            <h1 className="headerNot">not</h1>
+          </s>{" "}
+          todo
+        </h1>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
             onChange={(e) => setTodo(e.target.value)}
             value={todo}
           />
-          <button type="submit">Add Todo</button>
+          <button className="buttonFormSubmit" type="submit">
+            add todo
+          </button>
         </form>
       </div>
       {todos
