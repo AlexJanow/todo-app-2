@@ -67,16 +67,23 @@ function App() {
 
   return (
     <div className="App">
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          onChange={(e) => setTodo(e.target.value)}
-          value={todo}
-        />
-        <button type="submit">Add Todo</button>
-      </form>
+      <div className="headerForm">
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            onChange={(e) => setTodo(e.target.value)}
+            value={todo}
+          />
+          <button type="submit">Add Todo</button>
+        </form>
+      </div>
       {todos.map((todo) => (
-        <div key={todo.id}>
+        <div
+          className={`todoItem ${
+            todo.completed === false ? "notDone" : "done"
+          }`}
+          key={todo.id}
+        >
           {todoEditing === todo.id ? (
             <input
               type="text"

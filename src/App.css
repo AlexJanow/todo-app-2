@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.headerForm {
+  background-color: lightgreen;
+  padding: 5%;
+  border: 3px solid whitesmoke;
+}
+
+.todoItem {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 3%;
+  margin: 1%;
+}
+
+.done {
+  background-color: lightslategray;
+}
+
+.notDone {
+  background-color: lightseagreen;
+}
