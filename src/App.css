@@ -36,3 +36,103 @@
     transform: rotate(360deg);
   }
 }
+
+.headerForm {
+  background-color: lightgreen;
+  padding: 5%;
+  border: 3px solid whitesmoke;
+}
+
+.todoItem {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 3%;
+  margin: 1%;
+  word-wrap: break-word;
+}
+
+.done {
+  background-color: lightslategray;
+}
+
+.notDone {
+  background-color: lightseagreen;
+}
+
+.textContent {
+  padding: 3%;
+}
+
+.checkbox-box {
+  width: fit-content;
+  margin: auto;
+  padding: 0.5%;
+  margin-bottom: 1%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.buttonDelete {
+  all: unset;
+  padding: 0.5%;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: lightpink;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 1%;
+}
+
+.buttonSubmit {
+  all: unset;
+  padding: 0.5%;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: lightsalmon;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.buttonEdit {
+  all: unset;
+  padding: 0.5%;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: lightsalmon;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.buttonFormSubmit {
+  all: unset;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: lightseagreen;
+  padding: 0.5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+  color: white;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: lightseagreen;
+  padding-bottom: 2%;
+  transform: rotate(-0.01turn);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.notnot {
+  color: black;
+}
+
+.headerNot {
+  all: unset;
+  color: white;
+}
+
+input {
+  padding: 3%;
+}
