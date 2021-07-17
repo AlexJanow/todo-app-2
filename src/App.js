@@ -81,6 +81,7 @@ function App() {
             type="text"
             onChange={(e) => setTodo(e.target.value)}
             value={todo}
+            required
           />
           <button className="buttonFormSubmit" type="submit">
             add todo
