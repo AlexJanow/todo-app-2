@@ -91,20 +91,33 @@ function App() {
               value={editingText}
             />
           ) : (
-            <div>{todo.text}</div>
+            <div className="textContent">{todo.text}</div>
           )}
+          <div className="checkbox-box">
+            <label for="checkbox">check:</label>
+            <input
+              name="checkbox"
+              type="checkbox"
+              onChange={() => toggleComplete(todo.id)}
+              checked={todo.completed}
+            />
+          </div>
 
-          <button onClick={() => deleteTodo(todo.id)}>delete</button>
-          <input
-            type="checkbox"
-            onChange={() => toggleComplete(todo.id)}
-            checked={todo.completed}
-          />
+          <button className="buttonDelete" onClick={() => deleteTodo(todo.id)}>
+            delete
+          </button>
 
           {todoEditing === todo.id ? (
-            <button onClick={() => editTodo(todo.id)}>submit</button>
+            <button className="buttonSubmit" onClick={() => editTodo(todo.id)}>
+              submit
+            </button>
           ) : (
-            <button onClick={() => setTodoEditing(todo.id)}>edit</button>
+            <button
+              className="buttonEdit"
+              onClick={() => setTodoEditing(todo.id)}
+            >
+              edit
+            </button>
           )}
         </div>
       ))}
